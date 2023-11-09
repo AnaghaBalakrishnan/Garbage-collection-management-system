@@ -1,0 +1,82 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css\base.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body style="background-color:  #6ce28cbd">
+    
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="header_top">
+          <div class="container-fluid header_top_container">
+           
+            <div class="contact_nav">
+              <a href="">
+                <!-- <i class="fa fa-phone" aria-hidden="false"></i> -->
+                <!-- <i class='fa fa-phone' style='color: white'></i> -->
+                <span>
+                  Call : +91 8593033514
+                </span>
+              </a>
+              <a href="">
+                <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+                <span>
+                  Email : doorstempdump@gmail.com
+                </span>
+              </a>
+              <a href="">
+                <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
+                <span>
+                  instagram: @doorstep_dump_official
+                </span>
+              </a>
+            </div>
+        
+          </div>
+        </div>
+
+
+        <div class="header_bottom">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="#section6">
+                <img src="images/logo.png" alt="">
+              </a>
+              </a>
+  
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <h1 class="text-center text-dark text-xl-center" style="position: relative; margin-left: 600px; " >DOOR STEP DUMP</h1>
+              </div>
+              <div class="quote_btn-container">
+                <a href="{% url 'h' %}" class="quote_btn">
+                  Home
+                </a>
+              </div>
+              <div class="quote_btn-container">
+                <a href="{% url 'signin' %}" class="quote_btn">
+                  Sign Out
+                </a>
+              </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+  {% block nav %}
+  {% endblock nav %}
+   
+  </body>
+</html>
